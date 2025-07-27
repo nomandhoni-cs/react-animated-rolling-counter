@@ -1,7 +1,7 @@
 {
   "name": "react-animated-rolling-counter",
   "private": false,
-  "version": "1.0.7",
+  "version": "1.1.0",
   "type": "module",
   "description": "A lightweight and customizable animated counter component for React.",
   "main": "./dist/react-animated-rolling-counter.umd.cjs",
