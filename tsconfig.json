@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        // --- Core Build Options ---
+        "target": "ESNext", // Compile to modern JavaScript
+        "module": "ESNext", // Use modern module syntax
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ], // Include standard browser and JS libraries
+        "jsx": "react-jsx", // THIS IS THE FIX! Tells TSC how to handle JSX.
+        // --- Module Resolution ---
+        "moduleResolution": "bundler", // The recommended setting for modern bundlers like Vite
+        "allowImportingTsExtensions": true, // Required for 'moduleResolution: "bundler"'
+        "resolveJsonModule": true,
+        "isolatedModules": true, // Ensures each file can be transpiled independently
+        "noEmit": true, // Let Vite handle the .js output; TSC is only for type checking
+        // --- Library Best Practices ---
+        "strict": true, // Enforce strict type-checking rules
+        "skipLibCheck": true, // Don't type-check declaration files from node_modules
+        "allowSyntheticDefaultImports": true // For compatibility with different module types
+    },
+    "include": [
+        "src"
+    ], // Tells TSC to only check files inside the 'src' folder
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ] // (Optional but good practice)
+}

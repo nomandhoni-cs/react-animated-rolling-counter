@@ -1,0 +1,39 @@
+/* 
+  Base structural styles for the react-animated-rolling-counter.
+  Import this file once in your project's entry point (e.g., App.tsx).
+*/
+
+/* The main container that holds all the digits. */
+.animated-counter-container {
+    display: flex;
+    font-weight: 600;
+    /* A sensible default font-weight */
+}
+
+/* A wrapper for each individual digit reel. Provides a default width. */
+.animated-counter-digit-wrapper {
+    width: 0.6em;
+    /* Scales with the font-size, good for monospaced-like fonts */
+}
+
+/* The fixed-height "window" for a single digit. Hides the rest of the reel. */
+.animated-counter-digit-slot {
+    position: relative;
+    overflow: hidden;
+}
+
+/* The vertical strip of numbers that slides up and down. */
+.animated-counter-reel {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    /* A smooth, premium easing */
+}
+
+/* A single number within the reel. */
+.animated-counter-digit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
