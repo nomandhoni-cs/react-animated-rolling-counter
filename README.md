@@ -2,7 +2,8 @@
 
 A lightweight, performant, and highly customizable animated counter component for React, perfect for displaying changing numbers with a smooth "slot machine" rolling effect.
 
-![Demo GIF](https://your-gif-url.com/demo.gif) <!-- You would create a GIF and host it -->
+https://github.com/user-attachments/assets/096ab99f-c415-43bc-ab3b-a45db4ce006d
+
 
 ## Features
 
